@@ -21,6 +21,8 @@ micronaut {
 }
 
 dependencies {
+implementation("io.micronaut.xml:micronaut-jackson-xml")
+
     implementation("io.micronaut:micronaut-validation")
     implementation("io.micronaut:micronaut-runtime")
     runtimeOnly("ch.qos.logback:logback-classic")

@@ -41,7 +41,7 @@ public class BookControllerTest {
     
     @Test
     void testPing() {
-        AwsProxyRequest request = new AwsProxyRequestBuilder("/ping", HttpMethod.GET.toString())
+        AwsProxyRequest request = new AwsProxyRequestBuilder("/getgegrid/xml", HttpMethod.GET.toString())
                 .build(); 
         AwsProxyResponse response = handler.handleRequest(request, lambdaContext);
         System.out.println(response.getBody());
